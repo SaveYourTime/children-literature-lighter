@@ -8,7 +8,7 @@
  */
 
 .navbar-fixed, thead, .container-wrapper {
-  background-color: rgb(241, 235, 213);
+  background-color: rgb(248, 206, 176);
 }
 
 nav ul a {
@@ -20,7 +20,7 @@ p {
 }
 
 nav .brand-logo, .sidenav-trigger, .table-title, .footer-links>a:hover {
-  color: rgb(218, 198, 125);
+  color: rgb(39, 50, 79);
 }
 
 .banner {
@@ -72,16 +72,16 @@ th {
 /* read-more */
 
 .read-more a {
-  background-color: rgb(241, 235, 213);
+  background-color: rgb(250, 216, 190);
   color: #5e5e5e;
 }
 
 .read-more a:hover {
-  background-color: rgb(241, 231, 194);
+  background-color: rgb(249, 200, 162);
 }
 
 .read-more a:focus {
-  background-color: rgb(234, 218, 160);
+  background-color: rgb(251, 195, 151);
 }
 
 /* footer */
