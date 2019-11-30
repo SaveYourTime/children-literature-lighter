@@ -1,7 +1,4 @@
 (() => {
-  // M.AutoInit();
-  let counts = 0;
-
   const sidenav = M.Sidenav.init(document.querySelector('.sidenav'));
   sidenav.el.addEventListener('click', (e) => {
     if (e.target instanceof HTMLAnchorElement) {
@@ -17,19 +14,11 @@
     fullWidth: true,
     indicators: true
   });
-  
-  document.addEventListener('lazyloaded', (e) => {
-    if (e.target.closest('.slider')) {
-      counts++;
-      if (counts === e.target.closest('.slides').childElementCount) {
-        M.Slider.init(e.target.closest('.slider'), {
-          height: 300,
-          duration: 500,
-          interval: 2000,
-        });
-        counts = 0;
-      }
-    }
+
+  M.Slider.init(document.querySelectorAll('.slider'), {
+    height: 300,
+    duration: 500,
+    interval: 2000,
   });
 
   document.querySelector('.read-more a.btn').addEventListener('click', () => {
